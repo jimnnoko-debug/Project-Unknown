@@ -1,0 +1,51 @@
+/*
+comment
+
+selector {
+    property: value;
+    property: value;
+}
+
+*/
+
+/* global specific CSS rule */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* element specific CSS rule */
+h1,a,li,p {
+    color: green;
+}
+
+/* id specific CSS rule */
+/* rgb(RED, GREEN, BLACK); */
+#name {
+    color: rgb(22, 53, 192);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:70px ;
+    font-weight: 100;
+    border: 1px solid green;
+    background-color: red;
+}
+
+li {
+    margin: 10px;
+    padding: 90px;
+    border: 2px solid black;
+}
+
+/* CSS class rule syntax */
+.footer {
+    background-color: black;
+    height: 100px;
+    font-size: larger;
+    text-align:center ;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
