@@ -1,21 +1,18 @@
-* {
+* { /* UNIVERSAL CSS SELECTOR */
     padding: 0;
     margin: 0;
 }
 
 
-main {
-    background-color: rgb(144, 144, 211);
-}
 
-.da {
+
+.da { /* CLASS CSS SELECTOR RULE */
     background-color: rgb(19, 141, 100);
     display: flex;
     flex-direction: row;
     justify-content:space-between;
     flex-wrap: wrap;
     gap: 2px;
-    height: 100vh;
     padding: 0 3px
 }
 
@@ -25,4 +22,20 @@ main {
     width: 60px;
     align-content: center;
     text-align: center;
+}
+
+
+#idattr { /* ID CSS SELECTOR RULE */
+    background-color: aqua;
+
+}
+
+h1, p { /* GROUPING CSS SELECTOR */
+    font-size: small;
+    font-style: italic;
+}
+
+.quote {
+    color: black;
+    margin: 16px 40px;
 }
