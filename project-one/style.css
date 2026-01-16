@@ -63,13 +63,13 @@ a:hover {
 .blob2 {
     position: absolute;
     margin: auto;
-
     width: 600px;
     height: 600px;
     background-color: #4b75e0; 
     border-radius: 50%;
-    filter: blur(20px);
+    filter: blur(5px);
     z-index: -1;
+    animation: morph 8s ease-in-out infinite;
 }
 
 .content {
@@ -256,6 +256,9 @@ a:hover {
     min-height: 80vh;
     display: flex;
     align-items: center;
+    border-style: solid;
+    border-color: red;
+    border-width: 1px;
 }
 
 .blob {
@@ -311,16 +314,19 @@ a:hover {
     transform: scale(1.05);
 }
 
+
+/* Footer CSS Rules */
 .site-footer {
-    background-color: #000;
+    background-color: blue;
     color: #fff;
     padding: 80px 20px;
-    margin-top: 0;
+        /*   t    r    b    l */
 }
 
 .footer-container {
     max-width: 1100px;
-    margin: 0 auto;
+    margin: 0   auto;
+        /* t/b  r/l */
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -328,8 +334,9 @@ a:hover {
 }
 
 .footer-logo {
-    font-family: serif;
+    font-family:"Inter", serif;
     font-size: 1.8rem;
+    /* Go and check out the different values you can apply to the font-size */
     margin-bottom: 15px;
 }
 
@@ -342,6 +349,7 @@ a:hover {
 .footer-links {
     display: flex;
     gap: 80px;
+    border: solid 1px green;
 }
 
 .link-group h3 {
@@ -353,9 +361,7 @@ a:hover {
 }
 
 .link-group ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    list-style:none;
 }
 
 .link-group li {
@@ -364,13 +370,14 @@ a:hover {
 
 .link-group a {
     color: #fff;
-    text-decoration: none;
-    font-size: 0.95rem;
-    transition: color 0.2s;
+    text-decoration:none;
+    font-size: 1.95rem;
+    transition: color 5.2s ease-in-out;
 }
 
 .link-group a:hover {
-    color: #98ffcc;
+    color: #f30000;
+
 }
 
 

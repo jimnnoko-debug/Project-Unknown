@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            background-color: #eeee;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+        }
+
+        .parent {
+            background-color: rgb(28, 116, 205);
+            height: 700px;
+            width: 700px;
+        }
+
+        .child {
+            background-color: rgb(31, 28, 28);
+            height: 50%;
+            width: 50%;
+            /*transition: transform 1s ease-out; */
+            animation: simple-test-animation 6s ease-in-out infinite;
+        }
+
+        .child:hover {
+            animation-play-state:running;
+        }
+
+
+        @keyframes simple-test-animation  {
+            0% {
+
+            transform: translateY(100%);
+
+            }
+           25% {
+            background-color: white;
+           }
+
+           50% {
+            background-color: green;
+
+           }
+
+           75% {
+            background-color: red;
+           }
+           
+           100% {
+            background-color: blue;
+           }
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+    <div class="parent">
+        <div class="child"></div>
+    </div>
+</body>
+</html>
