@@ -3,9 +3,8 @@
 
 function outer(name) {
   return function () {
-    return name;
+    console.log(`Hello ${name}`);
   }
 }
 
-
- console.log(outer("Hello"));
+outer("Alex")();

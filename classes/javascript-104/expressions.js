@@ -1,8 +1,15 @@
+// all functions are declaration
+// you can do assignment to it later on
 
 
-const square = function (n) {
+console.log(Square(9));
+console.log(Square(2));
+
+function Square(n) {
   return n * n;
 };
 
-console.log(square(9));
-console.log(square(2));
+// this function is not going to be hoisted
+const square = (n) => { return n * n }
+
+console.log(square(12));

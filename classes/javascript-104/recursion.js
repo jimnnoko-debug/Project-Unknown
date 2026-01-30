@@ -6,4 +6,4 @@ function countdown(n) {
   countdown(n - 1);
 }
 
-console.log(countdown(3));
+countdown(5);
